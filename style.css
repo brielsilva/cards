@@ -1,0 +1,79 @@
+.center {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+body {
+  background: hsl(0, 0%, 90%);
+}
+
+@media screen and (min-width: 30rem) {
+  .center {
+    max-width: 100%;
+  }
+}
+header {
+  margin: 0;
+  padding: 1rem;
+  background: rgb(51, 54, 49);
+}
+
+header h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.section-card {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  justify-content: space-between;
+}
+
+article {
+  border: 1px solid black;
+}
+
+article figure {
+  display: block;
+  margin: 0;
+}
+
+article figure img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+}
+
+.card-content {
+  background: white;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 0 1 calc(50% - 0.5rem);
+    margin-bottom: 1em;
+    /* margin-right: 2%;
+    margin-bottom: 2%; */
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 0 1 calc(33% - 0.5rem);
+    margin-bottom: 1em;
+    /* margin-right: 2%;
+    margin-bottom: 2%; */
+  }
+}
